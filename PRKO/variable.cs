@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRKO
 {
-    class Variable
+    public static class Variable
     { 
        public static AuthForm f1 = new AuthForm();
        public static MenuForm f2 = new MenuForm();
