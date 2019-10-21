@@ -34,6 +34,13 @@ namespace PRKO
             this.абитуриентTableAdapter.Fill(this.pRKODataSet.Абитуриент);
 
         }
+       
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            абитуриентTableAdapter.Update(this.pRKODataSet.Абитуриент);
+            String path = @"Z:\PRKO.mdb";
+        }
         
     }
 }

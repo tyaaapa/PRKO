@@ -24,8 +24,8 @@ namespace PRKO
         private void юридическийФакультетToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Hide();
-            this.Close();
             f3.ShowDialog();
+            this.Close();
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
