@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-        //.
+        //.2tgmjtgmtjtr
         #region Код, автоматически созданный конструктором форм Windows
 
         /// <summary>
