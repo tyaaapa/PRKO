@@ -10,28 +10,23 @@ using System.Windows.Forms;
 
 namespace PRKO
 {
-    public partial class MenuForm : Form
+    public partial class AddForm : Form
     {
         public static AuthForm f1 = new AuthForm();
         public static MenuForm f2 = new MenuForm();
         public static UristForm f3 = new UristForm();
         public static AddForm f4 = new AddForm();
 
-        public MenuForm()
+        public AddForm()
         {
             InitializeComponent();
         }
-        
-        private void юридическийФакультетToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void button2_Click(object sender, EventArgs e)
         {
             Hide();
             f3.ShowDialog();
             this.Close();
-        }
-
-        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

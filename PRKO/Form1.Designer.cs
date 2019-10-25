@@ -77,7 +77,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(28, 240);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 32);
+            this.button1.Size = new System.Drawing.Size(89, 33);
             this.button1.TabIndex = 4;
             this.button1.Text = "ь";
             this.button1.UseVisualStyleBackColor = true;
@@ -85,9 +85,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(158, 240);
+            this.button2.Location = new System.Drawing.Point(151, 240);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 32);
+            this.button2.Size = new System.Drawing.Size(89, 33);
             this.button2.TabIndex = 5;
             this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // AuthForm
             // 

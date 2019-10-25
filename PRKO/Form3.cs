@@ -15,6 +15,7 @@ namespace PRKO
         public static AuthForm f1 = new AuthForm();
         public static MenuForm f2 = new MenuForm();
         public static UristForm f3 = new UristForm();
+        public static AddForm f4 = new AddForm();
 
         public UristForm()
         {
@@ -41,6 +42,12 @@ namespace PRKO
             абитуриентTableAdapter.Update(this.pRKODataSet.Абитуриент);
             String path = @"Z:\PRKO.mdb";
         }
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            f4.ShowDialog();
+            this.Close();
+        }
     }
 }

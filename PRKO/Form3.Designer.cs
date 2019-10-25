@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pRKODataSet = new PRKO.PRKODataSet();
-            this.pRKODataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.абитуриентBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.абитуриентTableAdapter = new PRKO.PRKODataSetTableAdapters.АбитуриентTableAdapter();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фамилияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.имяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +51,10 @@
             this.иностранныйЯзыкDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.среднийБаллАттестатаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.результатЕГЭDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.абитуриентBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pRKODataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pRKODataSet = new PRKO.PRKODataSet();
+            this.абитуриентTableAdapter = new PRKO.PRKODataSetTableAdapters.АбитуриентTableAdapter();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -62,17 +62,17 @@
             this.улицаBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.улицаTableAdapter = new PRKO.PRKODataSetTableAdapters.УлицаTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.абитуриентBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.улицаBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1019, 412);
+            this.button1.Location = new System.Drawing.Point(1005, 402);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(89, 33);
             this.button1.TabIndex = 0;
             this.button1.Text = "Закрыть";
             this.button1.UseVisualStyleBackColor = true;
@@ -108,25 +108,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1046, 190);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // pRKODataSet
-            // 
-            this.pRKODataSet.DataSetName = "PRKODataSet";
-            this.pRKODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pRKODataSetBindingSource
-            // 
-            this.pRKODataSetBindingSource.DataSource = this.pRKODataSet;
-            this.pRKODataSetBindingSource.Position = 0;
-            // 
-            // абитуриентBindingSource
-            // 
-            this.абитуриентBindingSource.DataMember = "Абитуриент";
-            this.абитуриентBindingSource.DataSource = this.pRKODataSetBindingSource;
-            // 
-            // абитуриентTableAdapter
-            // 
-            this.абитуриентTableAdapter.ClearBeforeFill = true;
             // 
             // кодDataGridViewTextBoxColumn
             // 
@@ -248,6 +229,25 @@
             this.результатЕГЭDataGridViewTextBoxColumn.HeaderText = "Результат ЕГЭ";
             this.результатЕГЭDataGridViewTextBoxColumn.Name = "результатЕГЭDataGridViewTextBoxColumn";
             // 
+            // абитуриентBindingSource
+            // 
+            this.абитуриентBindingSource.DataMember = "Абитуриент";
+            this.абитуриентBindingSource.DataSource = this.pRKODataSetBindingSource;
+            // 
+            // pRKODataSetBindingSource
+            // 
+            this.pRKODataSetBindingSource.DataSource = this.pRKODataSet;
+            this.pRKODataSetBindingSource.Position = 0;
+            // 
+            // pRKODataSet
+            // 
+            this.pRKODataSet.DataSetName = "PRKODataSet";
+            this.pRKODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // абитуриентTableAdapter
+            // 
+            this.абитуриентTableAdapter.ClearBeforeFill = true;
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(12, 12);
@@ -256,6 +256,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Добавить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -277,9 +278,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(908, 412);
+            this.button5.Location = new System.Drawing.Point(894, 402);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(89, 33);
             this.button5.TabIndex = 5;
             this.button5.Text = "Сохранить";
             this.button5.UseVisualStyleBackColor = true;
@@ -309,9 +310,9 @@
             this.Text = "UristForm";
             this.Load += new System.EventHandler(this.UristForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.абитуриентBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.улицаBindingSource)).EndInit();
             this.ResumeLayout(false);
 
