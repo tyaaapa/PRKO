@@ -31,7 +31,7 @@ namespace PRKO
 
         private void UristForm_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "pRKODataSet.Абитуриент". При необходимости она может быть перемещена или удалена.
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "pRKODataSkgyugkuбходимости она может быть перемещена или удалена.
             this.абитуриентTableAdapter.Fill(this.pRKODataSet.Абитуриент);
 
         }
