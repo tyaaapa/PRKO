@@ -24,8 +24,6 @@ namespace PRKO
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hide();
-            f2.ShowDialog();
             this.Close();
         }
 
@@ -45,9 +43,7 @@ namespace PRKO
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Hide();
             f4.ShowDialog();
-            this.Close();
         }
     }
 }

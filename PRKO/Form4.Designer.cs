@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -72,11 +73,36 @@
             this.абитуриентTableAdapter1 = new PRKO.PRKODataSetTableAdapters.АбитуриентTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.pRKODataSet = new PRKO.PRKODataSet();
+            this.гражданствоBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.гражданствоTableAdapter = new PRKO.PRKODataSetTableAdapters.ГражданствоTableAdapter();
+            this.учебноезаведениеBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.учебное_заведениеTableAdapter = new PRKO.PRKODataSetTableAdapters.Учебное_заведениеTableAdapter();
+            this.факультетBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.факультетTableAdapter = new PRKO.PRKODataSetTableAdapters.ФакультетTableAdapter();
+            this.специальностьBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.специальностьTableAdapter = new PRKO.PRKODataSetTableAdapters.СпециальностьTableAdapter();
+            this.pRKODataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.типдокументаBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.тип_документаTableAdapter = new PRKO.PRKODataSetTableAdapters.Тип_документаTableAdapter();
+            this.городBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.городTableAdapter = new PRKO.PRKODataSetTableAdapters.ГородTableAdapter();
+            this.улицаBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.улицаTableAdapter = new PRKO.PRKODataSetTableAdapters.УлицаTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.гражданствоBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.учебноезаведениеBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.факультетBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.специальностьBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.типдокументаBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.городBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.улицаBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -282,6 +308,8 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DataSource = this.гражданствоBindingSource;
+            this.comboBox4.DisplayMember = "Название";
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(183, 140);
             this.comboBox4.Name = "comboBox4";
@@ -358,6 +386,8 @@
             // 
             // comboBox8
             // 
+            this.comboBox8.DataSource = this.типдокументаBindingSource;
+            this.comboBox8.DisplayMember = "Тип документа";
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(232, 116);
             this.comboBox8.Name = "comboBox8";
@@ -366,6 +396,8 @@
             // 
             // comboBox7
             // 
+            this.comboBox7.DataSource = this.специальностьBindingSource;
+            this.comboBox7.DisplayMember = "Название";
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Location = new System.Drawing.Point(232, 93);
             this.comboBox7.Name = "comboBox7";
@@ -374,6 +406,8 @@
             // 
             // comboBox6
             // 
+            this.comboBox6.DataSource = this.факультетBindingSource;
+            this.comboBox6.DisplayMember = "Факультет";
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(232, 70);
             this.comboBox6.Name = "comboBox6";
@@ -382,6 +416,8 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.DataSource = this.учебноезаведениеBindingSource;
+            this.comboBox5.DisplayMember = "Учебное заведение";
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(232, 24);
             this.comboBox5.Name = "comboBox5";
@@ -448,6 +484,8 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DataSource = this.улицаBindingSource;
+            this.comboBox2.DisplayMember = "Улица";
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(103, 37);
             this.comboBox2.Name = "comboBox2";
@@ -465,6 +503,8 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DataSource = this.городBindingSource;
+            this.comboBox3.DisplayMember = "Город";
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(103, 13);
             this.comboBox3.Name = "comboBox3";
@@ -494,6 +534,79 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // pRKODataSet
+            // 
+            this.pRKODataSet.DataSetName = "PRKODataSet";
+            this.pRKODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // гражданствоBindingSource
+            // 
+            this.гражданствоBindingSource.DataMember = "Гражданство";
+            this.гражданствоBindingSource.DataSource = this.pRKODataSet;
+            // 
+            // гражданствоTableAdapter
+            // 
+            this.гражданствоTableAdapter.ClearBeforeFill = true;
+            // 
+            // учебноезаведениеBindingSource
+            // 
+            this.учебноезаведениеBindingSource.DataMember = "Учебное_заведение";
+            this.учебноезаведениеBindingSource.DataSource = this.pRKODataSet;
+            // 
+            // учебное_заведениеTableAdapter
+            // 
+            this.учебное_заведениеTableAdapter.ClearBeforeFill = true;
+            // 
+            // факультетBindingSource
+            // 
+            this.факультетBindingSource.DataMember = "Факультет";
+            this.факультетBindingSource.DataSource = this.pRKODataSet;
+            // 
+            // факультетTableAdapter
+            // 
+            this.факультетTableAdapter.ClearBeforeFill = true;
+            // 
+            // специальностьBindingSource
+            // 
+            this.специальностьBindingSource.DataMember = "Специальность";
+            this.специальностьBindingSource.DataSource = this.pRKODataSet;
+            // 
+            // специальностьTableAdapter
+            // 
+            this.специальностьTableAdapter.ClearBeforeFill = true;
+            // 
+            // pRKODataSetBindingSource
+            // 
+            this.pRKODataSetBindingSource.DataSource = this.pRKODataSet;
+            this.pRKODataSetBindingSource.Position = 0;
+            // 
+            // типдокументаBindingSource
+            // 
+            this.типдокументаBindingSource.DataMember = "Тип_документа";
+            this.типдокументаBindingSource.DataSource = this.pRKODataSetBindingSource;
+            // 
+            // тип_документаTableAdapter
+            // 
+            this.тип_документаTableAdapter.ClearBeforeFill = true;
+            // 
+            // городBindingSource
+            // 
+            this.городBindingSource.DataMember = "Город";
+            this.городBindingSource.DataSource = this.pRKODataSet;
+            // 
+            // городTableAdapter
+            // 
+            this.городTableAdapter.ClearBeforeFill = true;
+            // 
+            // улицаBindingSource
+            // 
+            this.улицаBindingSource.DataMember = "Улица";
+            this.улицаBindingSource.DataSource = this.pRKODataSet;
+            // 
+            // улицаTableAdapter
+            // 
+            this.улицаTableAdapter.ClearBeforeFill = true;
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +619,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "AddForm";
             this.Text = "Новый абитуриент";
+            this.Load += new System.EventHandler(this.AddForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -514,6 +628,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.гражданствоBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.учебноезаведениеBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.факультетBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.специальностьBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.типдокументаBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.городBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.улицаBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -564,5 +687,21 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private PRKODataSet pRKODataSet;
+        private System.Windows.Forms.BindingSource гражданствоBindingSource;
+        private PRKODataSetTableAdapters.ГражданствоTableAdapter гражданствоTableAdapter;
+        private System.Windows.Forms.BindingSource учебноезаведениеBindingSource;
+        private PRKODataSetTableAdapters.Учебное_заведениеTableAdapter учебное_заведениеTableAdapter;
+        private System.Windows.Forms.BindingSource факультетBindingSource;
+        private PRKODataSetTableAdapters.ФакультетTableAdapter факультетTableAdapter;
+        private System.Windows.Forms.BindingSource специальностьBindingSource;
+        private PRKODataSetTableAdapters.СпециальностьTableAdapter специальностьTableAdapter;
+        private System.Windows.Forms.BindingSource pRKODataSetBindingSource;
+        private System.Windows.Forms.BindingSource типдокументаBindingSource;
+        private PRKODataSetTableAdapters.Тип_документаTableAdapter тип_документаTableAdapter;
+        private System.Windows.Forms.BindingSource городBindingSource;
+        private PRKODataSetTableAdapters.ГородTableAdapter городTableAdapter;
+        private System.Windows.Forms.BindingSource улицаBindingSource;
+        private PRKODataSetTableAdapters.УлицаTableAdapter улицаTableAdapter;
     }
 }
