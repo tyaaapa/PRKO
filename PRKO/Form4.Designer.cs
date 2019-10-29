@@ -89,6 +89,7 @@
             this.городTableAdapter = new PRKO.PRKODataSetTableAdapters.ГородTableAdapter();
             this.улицаBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.улицаTableAdapter = new PRKO.PRKODataSetTableAdapters.УлицаTableAdapter();
+            this.абитуриентBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -103,6 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.типдокументаBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.городBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.улицаBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.абитуриентBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -293,6 +295,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.HideSelection = false;
             this.textBox1.Location = new System.Drawing.Point(169, 24);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(144, 20);
@@ -517,7 +520,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(754, 336);
+            this.button1.Location = new System.Drawing.Point(639, 336);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 33);
             this.button1.TabIndex = 29;
@@ -526,7 +529,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(865, 336);
+            this.button2.Location = new System.Drawing.Point(743, 336);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 33);
             this.button2.TabIndex = 30;
@@ -607,11 +610,16 @@
             // 
             this.улицаTableAdapter.ClearBeforeFill = true;
             // 
+            // абитуриентBindingSource
+            // 
+            this.абитуриентBindingSource.DataMember = "Абитуриент";
+            this.абитуриентBindingSource.DataSource = this.pRKODataSet;
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 381);
+            this.ClientSize = new System.Drawing.Size(843, 381);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox3);
@@ -637,6 +645,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.типдокументаBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.городBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.улицаBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.абитуриентBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -703,5 +712,6 @@
         private PRKODataSetTableAdapters.ГородTableAdapter городTableAdapter;
         private System.Windows.Forms.BindingSource улицаBindingSource;
         private PRKODataSetTableAdapters.УлицаTableAdapter улицаTableAdapter;
+        private System.Windows.Forms.BindingSource абитуриентBindingSource;
     }
 }
